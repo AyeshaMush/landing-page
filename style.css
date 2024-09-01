@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* header */
+
+.header{
+    background-color:#1F2937;
+    color:white;
+    display:flex;
+    padding:10px 130px;
+    justify-content:space-between;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    gap:10px;
+}
+
+.logo-text{
+    size:24px;
+    color:#F9FAF8;
+}
+
+.header-links{
+    size:18px;
+    color:#E5E7EB;
+}
