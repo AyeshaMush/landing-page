@@ -10,3 +10,17 @@
     2. Working with CSS selectors
     
     3. Working with flexbox
+
+-> Capybara images from:
+
+    1. Image by Dušan from Pixabay
+
+    2. Photo by Magali Guimarães: https://www.pexels.com/photo/a-brown-capybara-on-water-5479610/
+
+    3. Photo by Hoyoun Lee on Unsplash
+
+    4. Image by Lukas Wittsieker from Pixabay
+
+    5. Photo by Klaus Steinberg on Unsplash
+  
+  
