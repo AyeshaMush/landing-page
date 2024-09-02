@@ -1,18 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* header */
 
 .header {
-    border: 5px solid red;
     background-color: #1F2937;
     color: white;
     display: flex;
-    padding: 10px 130px;
+    padding: 20px 150px;
     justify-content: space-between;
+    flex: 1;
 }
 
 ul {
@@ -26,19 +39,26 @@ ul {
     color: #F9FAF8;
 }
 
-.header-links, .header-info {
+.header-links,
+.header-info {
     size: 18px;
+    color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
     color: #E5E7EB;
 }
 
 /* second header */
 
 .second-header {
-    border:5px solid pink;
     background-color: #1F2937;
-    padding: 10px 130px;
-    display:flex;
-    gap: 25px;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .header-title {
@@ -55,20 +75,160 @@ button {
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
+    display: inline-block;
 }
 
-.header-content{
-    border:5px dotted red;
-    display:flex;
-    flex-direction:column;
-    width:350px;
-    height:200px;
-    gap:10px;
-    text-align:left; 
-    padding:0px 20px;
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 200px;
+    gap: 10px;
+    text-align: left;
+    padding: 0px 20px;
 }
 
-.header-picture{
-    border:5px dotted orange;
-    /* width:auto; */
+.information-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/* information section */
+
+body {
+    text-align: center;
+}
+
+.information-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    height: 300px;
+    flex: 1;
+    margin: 30px;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info {
+    height: 200px;
+    width: 250px;
+}
+
+/* quote area */
+.quote-container {
+
+    background-color: #E5E7EB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    text-align: left;
+    height: 300px;
+    width: 700px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.quote-author {
+    font-size: 25px;
+    align-self: flex-end;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 350px;
+    height: 350px;
+}
+
+/* signup area */
+.signup-area {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 50px;
+}
+
+.signup-box {
+    height: 150px;
+    background-color: #3882F6;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 800px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-button {
+    border: 2px solid white;
+    padding: 10px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-text {
+    text-align: left;
+}
+
+.text-one {
+    font-size: 20px;
+}
+
+/*footer*/
+
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 150px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+}
+
+
+/* addition editing */
+.glow {
+    color: #fff;
+    text-align: left-align;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f2bc9, 0 0 40px #4a54df, 0 0 50px #2c13b9, 0 0 60px #1e22f0, 0 0 70px #2320d8;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #f88e04f3, 0 0 40px #eba31e, 0 0 50px #cf9008, 0 0 60px #b88311, 0 0 70px #cc8708, 0 0 80px #c47b0e;
+    }
 }
